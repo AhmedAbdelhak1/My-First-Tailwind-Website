@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body class="text-gray-600 ">
+    <div class="grid md:grid-cols-3">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right"> 
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100 "> 
+                        <a href="/" class="hover:text-gray-700"> Best Traditional Food</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class=" py-1">
+                        <a href="index.html" class="px-4 flex justify-end ">
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" viewBox="0 0 20 20" fill="currentColor" class="home w-6 h-6"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="About.html" class="px-4 flex justify-end ">
+                            <span>About</span>
+                            <svg class="w-5 ml-2" viewBox="0 0 20 20" fill="currentColor" class="question-mark-circle w-6 h-6"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </li>
+                    <li class=" font-bold py-1">
+                        <a href="Contact.html" class="px-4 flex justify-end border-r-4 border-red-700">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" viewBox="0 0 20 20" fill="currentColor" class="mail w-6 h-6"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main class="text-gray-600 px-16 py-6 h-screen bg-gray-100  rounded md:col-span-2 ">
+            <div>
+                <form class="w-full max-w-sm">
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-gray-700 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                          Email
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-100 appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="email" value="">
+                      </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-gray-700 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password">
+                          Subject
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-100 appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <label class="block text-gray-700 font-bold md:text-right mb-0 md:mb-0 pr-4" for="inline-full-name">
+                          Message
+                        </label>
+                      </div>
+                    <div class="md:w-2/3">
+                        <textarea class=" ml-32 mb-5 bg-gray-100 appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    
+                    <div class="md:flex md:items-center">
+                      <div class="md:w-1/3"></div>
+                      <div class="md:w-2/3">
+                        <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded transition duration-500" type="button">
+                          Send It
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+
+        </main>
+    
+</body>
+</html>
